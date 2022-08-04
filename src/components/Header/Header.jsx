@@ -11,7 +11,7 @@ function Header() {
 
 const submitHandler = (e) => {
 e.preventDefault();
-if(term == "") {
+if(term === "") {
   alert('Search smth')
 }
 dispatch(fetchAsyncMovies(term))
